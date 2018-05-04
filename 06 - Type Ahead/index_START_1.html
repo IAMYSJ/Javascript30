@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Type Ahead 👀</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <form class="search-form">
+    <h2>HearthStone - The Witchwood</h2>
+    <input type="text" class="search" placeholder="Card Name">
+    <ul class="suggestions"></ul>
+  </form>
+<script>
+  const endpoint = 'https://gist.githubusercontent.com/IAMYSJ/fe3f80a02400ac88b3d9a14b5b61e23e/raw/5b6260fb8f870b47e8e3d45079ec8b317d8c7abd/hs_card_info';
+  
+  const cards = [];
+  
+  fetch(endpoint)
+    .then(blob => blob.json())
+    .then(data => cards.push(...data["The Witchwood"]));
+  
+  function findMatches(wordToMatch, cards) {
+    return cards.filter(card => {
+      const regexp = new RegExp(wordToMatch, 'gi');
+      return card.name.match(regexp);
+    });
+  }
+
+  function find() {
+    const matches = findMatches(this.value, cards);
+    const html = matches.map((card, i) => {
+      const regexp = new RegExp(this.value, 'gi');
+      const cardName = card.name
+                    .replace(regexp, `<span class="hl">${this.value}</span>`);
+      // console.log(cards[i].img);
+      return `
+        <li>
+          <span class="name">${cardName}</span>
+          <img src="${cards[i].img}" width="50px" height="70px">
+        </li>
+      `;
+    }).join('');
+    suggestions.innerHTML = html;
+  }
+
+  const cardName = document.querySelector('.search');
+  const suggestions = document.querySelector('.suggestions');
+
+  cardName.addEventListener('change', find);
+  cardName.addEventListener('keyup', find);
+</script>
+  </body>
+</html>
