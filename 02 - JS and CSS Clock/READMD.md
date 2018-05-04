@@ -1,6 +1,6 @@
 # Day 02-JS and CSS Clock
 
-[DEMO](https://iamysj.github.io/Javascript30/02-JS_and_CSS_Clock/index-START.html)
+[DEMO](https://iamysj.github.io/Javascript30/02%20-%20JS%20and%20CSS%20Clock/index-START.html)
 
 使用 Javascript 的 [Date](https://developer.mozilla.org/zh-TW/docs/Web/JavaScript/Reference/Global_Objects/Date)，
 透過 CSS 的 [transform](https://developer.mozilla.org/zh-TW/docs/Web/CSS/transform) 呈現時鐘的效果。
