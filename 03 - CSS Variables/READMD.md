@@ -1,6 +1,6 @@
 # Day 03-CSS_Variables
 
-[DEMO](https://iamysj.github.io/Javascript30/03-CSS_Variables/index-START.html)
+[DEMO](https://iamysj.github.io/Javascript30/03%20-%20CSS%20Variables/index-START.html)
 
 透過 Javascript 控制圖片的 CSS。
 
