@@ -1,6 +1,6 @@
 # Day 01-JavaScript Drum Kit
 
-[DEMO](https://iamysj.github.io/Javascript30/01-JavaScript_Drum_Kit/index-START.html)
+[DEMO](https://iamysj.github.io/Javascript30/01 - JavaScript Drum Kit/index-START.html)
 
 透過監聽鍵盤事件，取得 keyCode，來觸發對應的媒體播放以及 CSS 特效。
 
