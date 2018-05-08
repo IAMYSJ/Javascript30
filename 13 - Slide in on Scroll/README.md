@@ -1,6 +1,6 @@
 # 13 - Slide in on Scroll
 
-[DEMO]()
+[DEMO](https://iamysj.github.io/Javascript30/13%20-%20Slide%20in%20on%20Scroll/index-START.html)
 
 ## 說明
 
@@ -10,8 +10,7 @@
 text-align: justify; /* 使文字對齊左右邊緣 */
 float: left|right; /* 使元素向左或向右浮動 */
 opacity: 0~1; /* 元素的透明度 */
-transform: translateX(30%) scale(0.95); /* translateX: 使元素平行移動
-										scale: 使元素等比例放大或縮小 */
+transform: translateX(30%) scale(0.95); /* translateX: 使元素平行移動、scale: 使元素等比例放大或縮小 */
 transition: all .5s; /* 使變化的效果延遲5秒後執行 */
 ```
 
