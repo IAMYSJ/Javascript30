@@ -1,6 +1,6 @@
 # 15 - LocalStorage
 
-[DEMO]()
+[DEMO](https://iamysj.github.io/Javascript30/15%20-%20LocalStorage/index-START.html)
 
 這次 Wes Bos 教大家如何使用 LocalStorage 來儲存資料。
 
